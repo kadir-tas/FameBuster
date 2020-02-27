@@ -124,8 +124,8 @@
                         android:layout_marginHorizontal="4dp"
                         android:id="@+id/feed_retweet"
                         android:background="@drawable/ic_retweet"
-                        android:textSize="0dp"
-                        android:text="0"
+                        android:textSize="0sp"
+                        android:text=""
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:contentDescription="@string/feed_retweet" />
