@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">Fame Buster</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_plus">New Post</string>
+    <string name="title_new_post">New Post</string>
+    <string name="title_like">Like</string>
+    <string name="title_profile">Profile</string>
+    <string name="feed_image">Feed Image</string>
+    <string name="feed_profile_pictures">Famous Profile Pictures</string>
+    <string name="feed_profile_name">Name Name</string>
+    <string name="feed_location">Location</string>
+    <string name="feed_location_icon">Feed Location Icon</string>
+    <string name="feed_date">X Weeks Ago</string>
+    <string name="feed_like">Like</string>
+    <string name="feed_comment">Comment</string>
+    <string name="feed_retweet">Rebust</string>
+    <string name="feed_do_comment">Do Comment</string>
+    <string name="feed_like_count">x like</string>
+    <string name="feed_post_name">Big Post Name Here</string>
+    <string name="feed_post_comment">Post Comment Here</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="80dp">
+                <ImageView
+                    android:id="@+id/feed_profile_pictures"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:contentDescription="@string/feed_profile_pictures" />
+                <ProgressBar
+                    android:id="@+id/feed_profile_pictures_progress_bar"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginVertical="6dp"
+                    android:hint="@string/feed_profile_name"
+                    android:text="@string/feed_profile_name"
+                    android:textSize="25sp"
+                    style="bold"
+                    android:textColor="@color/textPink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginVertical="6dp"
+                    android:drawablePadding="10dp"
+                    android:backgroundTint="@color/locationBlue"
+                    android:drawableStart="@drawable/ic_location"
+                    android:id="@+id/feed_location"
+                    android:hint="@string/feed_location"
+                    android:text="@string/feed_location"
+                    android:textSize="15sp"
+                    android:textColor="@color/textGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/feed_date"
+                    android:text="@string/feed_date"
+                    android:layout_gravity="bottom|end"
+                    android:textColor="@color/textGray"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/feed_image"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:contentDescription="@string/feed_image" />
+            <ProgressBar
+                android:id="@+id/feed_image_progress_bar"
+                android:layout_gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ToggleButton
+                        android:layout_marginHorizontal="4dp"
+                        android:id="@+id/feed_like"
+                        android:background="@drawable/like_btn_toggle"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:text=""
+                        android:textSize="0sp"
+                        android:contentDescription="@string/feed_like" />
+
+                    <ImageButton
+                        android:layout_marginHorizontal="4dp"
+                        android:id="@+id/feed_comment"
+                        android:background="@drawable/ic_comment"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="@string/feed_comment" />
+
+                    <ToggleButton
+                        android:layout_marginHorizontal="4dp"
+                        android:id="@+id/feed_retweet"
+                        android:background="@drawable/ic_retweet"
+                        android:textSize="0dp"
+                        android:text="0"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="@string/feed_retweet" />
+
+                    <ImageButton
+                        android:layout_marginHorizontal="4dp"
+                        android:id="@+id/feed_do_comment"
+                        android:background="@drawable/ic_right_arrow"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="@string/feed_do_comment" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginEnd="20dp"
+                    android:text="@string/feed_like_count"
+                    android:textColor="@color/textGray"
+                    android:textSize="16sp"
+                    android:layout_gravity="end|center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/feed_post_name"
+                android:text="@string/feed_post_name"
+                android:textSize="20sp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/textBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/feed_post_comment"
+                android:text="@string/feed_post_comment"
+                android:textSize="15sp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/textGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>
