@@ -47,15 +47,14 @@ dependencies {
     //MAIN & LAYOUTS
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "androidx.appcompat:appcompat:1.1.0"
-    implementation  "androidx.constraintlayout:constraintlayout:2.0.0-beta4"
-    implementation  "androidx.legacy:legacy-support-v4:1.0.0"
+    implementation "androidx.constraintlayout:constraintlayout:2.0.0-beta4"
+    implementation "androidx.legacy:legacy-support-v4:1.0.0"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation "junit:junit:4.12"
     androidTestImplementation "androidx.test.ext:junit:1.1.1"
     androidTestImplementation "androidx.test.espresso:espresso-core:3.2.0"
     implementation "androidx.drawerlayout:drawerlayout:1.0.0"
     implementation "androidx.coordinatorlayout:coordinatorlayout:1.1.0"
-
     //RETROFIT & OKHTTP
     implementation "com.squareup.retrofit2:retrofit:2.6.2"
     implementation "com.squareup.retrofit2:converter-gson:2.6.2"
@@ -93,5 +92,6 @@ dependencies {
     implementation "com.squareup.picasso:picasso:2.71828"
     implementation "com.makeramen:roundedimageview:2.3.0"
     implementation "de.hdodenhof:circleimageview:3.0.0"
+    implementation 'androidx.paging:paging-runtime:2.1.0'
 
 }

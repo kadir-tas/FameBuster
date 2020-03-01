@@ -11,6 +11,8 @@
     <color name="textBlack">#000000</color>
     <color name="transparent">#00F44336</color>
     <color name="btnBlack">#000000</color>
-    <color name="btnBlue">#3656F4</color>
+    <color name="btnBlue">#002BFF</color>
     <color name="btnPink">#E91D75</color>
+    <color name="clickableBlue">#4060FF</color>
+    <color name="grayish">#EBEBEB</color>
 </resources>

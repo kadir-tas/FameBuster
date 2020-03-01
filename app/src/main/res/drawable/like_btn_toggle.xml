@@ -4,6 +4,6 @@
         <bitmap android:src="@drawable/ic_heart_outline" android:tint="@color/btnBlack"/>
     </item>
     <item android:state_checked="true" >
-        <bitmap android:src="@drawable/ic_heart" android:tint="@color/btnPink" />
+        <bitmap android:src="@drawable/ic_heart_liked"/>
     </item>
 </selector>

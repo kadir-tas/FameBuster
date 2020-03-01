@@ -1,4 +1,12 @@
 package com.famebuster.ui.main;
 
-public class MainViewModel {
+import androidx.lifecycle.ViewModel;
+
+import javax.inject.Inject;
+
+public class MainViewModel extends ViewModel {
+
+    @Inject
+    public MainViewModel() {
+    }
 }
