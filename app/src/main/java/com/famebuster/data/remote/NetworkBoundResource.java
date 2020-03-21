@@ -12,6 +12,7 @@ import androidx.lifecycle.MediatorLiveData;
 import androidx.lifecycle.Observer;
 
 import com.famebuster.data.Resource;
+import com.famebuster.data.local.entities.NewsOnMap;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -50,17 +51,21 @@ public abstract class NetworkBoundResource<ResultType, RequestType> {
             @Override
             public void onResponse(Call<RequestType> call, Response<RequestType> response) {
                 result.removeSource(dbSource);
-                saveResultAndReInit(response.body());
-                if(response.raw().cacheResponse() != null){
-                    Log.v("NETWORKBOUND", "RESPONSE FROM CACHE");
-                }else{
-                    Log.v("NETWORKBOUND", "RESPONSE NOT FROM CACHE");
+                if(response.body() != null || response.body().equals("")) {
+                    Log.d("MAPVALUE", "" + response.body().equals(""));
+                    saveResultAndReInit(response.body());
+                    if (response.raw().cacheResponse() != null) {
+                        Log.v("NETWORKBOUND", "RESPONSE FROM CACHE");
+                    } else {
+                        Log.v("NETWORKBOUND", "RESPONSE NOT FROM CACHE");
+                    }
                 }
             }
 
             @Override
             public void onFailure(Call<RequestType> call, Throwable t) {
                 onFetchFailed();
+                t.printStackTrace();
                 Log.v("NETWORKBOUND", "FETCH FROM NETWORK FAILED");
                 result.removeSource(dbSource);
                 result.addSource(dbSource, newData -> result.setValue(Resource.error(t.getMessage(), newData)));

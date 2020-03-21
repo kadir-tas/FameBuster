@@ -5,6 +5,7 @@ import android.app.Application;
 import androidx.room.Room;
 
 import com.famebuster.data.local.AppDatabase;
+import com.famebuster.data.local.dao.NewsOnMapDao;
 import com.famebuster.data.local.dao.UserDao;
 
 import javax.inject.Singleton;
@@ -24,5 +25,9 @@ public class LocalModule {
     @Provides
     @Singleton
     UserDao provideUserPlantDao(AppDatabase appDatabase){ return appDatabase.userDao(); }
+
+    @Provides
+    @Singleton
+    NewsOnMapDao provideNewsOnMapDao(AppDatabase appDatabase){ return appDatabase.newsOnMapDao(); }
 
 }

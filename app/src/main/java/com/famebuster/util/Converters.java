@@ -15,4 +15,15 @@ public class Converters {
     public static Long dateToTimestamp(Date date) {
         return date == null ? null : date.getTime();
     }
+
+    @TypeConverter
+    public static Double stringToDouble(String s) {
+        return (s == null || s.isEmpty()) ? 0 : Double.parseDouble(s);
+    }
+
+    @TypeConverter
+    public static String doubleToString(Double d) {
+        return d == null ? "" : d.toString();
+    }
+
 }

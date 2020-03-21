@@ -3,10 +3,12 @@ package com.famebuster.data.local.entities;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+import com.google.android.gms.maps.model.LatLng;
 import com.google.gson.annotations.SerializedName;
+import com.google.maps.android.clustering.ClusterItem;
 
 @Entity(tableName = "users")
-public class User {
+public class User implements ClusterItem {
     @PrimaryKey
     @SerializedName("id")
     private int id;
@@ -39,5 +41,20 @@ public class User {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    @Override
+    public LatLng getPosition() {
+        return null;
+    }
+
+    @Override
+    public String getTitle() {
+        return null;
+    }
+
+    @Override
+    public String getSnippet() {
+        return null;
     }
 }
