@@ -10,7 +10,6 @@ import com.famebuster.R;
 import com.famebuster.data.remote.ApiConstants;
 import com.famebuster.util.AppConstants;
 import com.famebuster.util.CircleTransform;
-import com.squareup.picasso.BuildConfig;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
