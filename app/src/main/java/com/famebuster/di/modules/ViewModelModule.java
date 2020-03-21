@@ -4,6 +4,8 @@ import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.famebuster.di.ViewModelKey;
+import com.famebuster.ui.main.MainViewModel;
+import com.famebuster.ui.main.fragments.feed.FeedViewModel;
 import com.famebuster.ui.map.MapsActivityViewModel;
 import com.famebuster.util.ViewModelFactory;
 
@@ -22,4 +24,15 @@ public abstract class ViewModelModule {
     @ViewModelKey(MapsActivityViewModel.class)
     abstract ViewModel bindsMapsActivityViewModel(MapsActivityViewModel mapsActivityViewModel);
 
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(MainViewModel.class)
+    abstract ViewModel bindsMainViewModel(MainViewModel mainViewModel);
+
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(FeedViewModel.class)
+    abstract ViewModel bindsFeedViewModel(FeedViewModel feedViewModel);
 }

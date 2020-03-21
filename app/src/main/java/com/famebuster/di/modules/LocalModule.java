@@ -6,6 +6,7 @@ import androidx.room.Room;
 
 import com.famebuster.data.local.AppDatabase;
 import com.famebuster.data.local.dao.NewsOnMapDao;
+import com.famebuster.data.local.dao.NewsDao;
 import com.famebuster.data.local.dao.UserDao;
 
 import javax.inject.Singleton;
@@ -29,5 +30,9 @@ public class LocalModule {
     @Provides
     @Singleton
     NewsOnMapDao provideNewsOnMapDao(AppDatabase appDatabase){ return appDatabase.newsOnMapDao(); }
+
+    @Provides
+    @Singleton
+    NewsDao provideNewsDao(AppDatabase appDatabase){ return appDatabase.newsDao(); }
 
 }

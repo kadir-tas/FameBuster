@@ -3,4 +3,16 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="bgBottomNavigation">#FFFFFF</color>
+    <color name="textPink">#F0265F</color>
+    <color name="locationBlue">#3518D5</color>
+    <color name="textGray">#302F2F</color>
+    <color name="white">#FFFFFF</color>
+    <color name="textBlack">#000000</color>
+    <color name="transparent">#00F44336</color>
+    <color name="btnBlack">#000000</color>
+    <color name="btnBlue">#002BFF</color>
+    <color name="btnPink">#E91D75</color>
+    <color name="clickableBlue">#4060FF</color>
+    <color name="grayish">#EBEBEB</color>
 </resources>

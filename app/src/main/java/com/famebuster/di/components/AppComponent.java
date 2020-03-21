@@ -10,6 +10,7 @@ import com.famebuster.di.modules.LocalModule;
 import com.famebuster.di.modules.NetworkModule;
 import com.famebuster.di.modules.ViewModelModule;
 import com.famebuster.di.modules.map.MapsModule;
+import com.famebuster.di.modules.news.NewsModule;
 import com.famebuster.di.modules.user.UserModule;
 
 import javax.inject.Singleton;
@@ -28,7 +29,8 @@ import dagger.android.support.AndroidSupportInjectionModule;
         ViewModelModule.class,
         LocalModule.class,
         UserModule.class,
-        MapsModule.class
+        MapsModule.class,
+        NewsModule.class
    })
 public interface AppComponent {
 
